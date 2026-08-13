@@ -39,7 +39,10 @@
       "Bash(git remote:*)",
       "Bash(curl -s -T index.html \"ftp://ftp.bichialessandro.it/public_html/index.html\" --netrc && curl -s -T privacy.html \"ftp://ftp.bichialessandro.it/public_html/privacy.html\" --netrc && echo \"Deploy completed\")",
       "Bash(curl -s -T index.html \"ftp://ftp.bichialessandro.it/public_html/index.html\" --netrc && echo \"Deployed\")",
-      "Bash(cd /c/Development/BichiAlessandro/Content/Images && rm -f Intestazione.jpg facciatanegozio.jpg barcode16.png drawing_utensils16.png factory.png fax_machine.png help_earth16.png help_earth24.png home16.png mail_yellow.png money_bill_cut16.png office_building16.png office_building24.png photo_landscape16.png scientist16.png signal_flag_checkered16.png signal_flag_checkered24.png telephone.png user_mobilephone16.png user_mobilephone24.png && echo \"Old images removed\")"
+      "Bash(cd /c/Development/BichiAlessandro/Content/Images && rm -f Intestazione.jpg facciatanegozio.jpg barcode16.png drawing_utensils16.png factory.png fax_machine.png help_earth16.png help_earth24.png home16.png mail_yellow.png money_bill_cut16.png office_building16.png office_building24.png photo_landscape16.png scientist16.png signal_flag_checkered16.png signal_flag_checkered24.png telephone.png user_mobilephone16.png user_mobilephone24.png && echo \"Old images removed\")",
+      "Bash(curl -s --list-only \"ftp://ftp.bichialessandro.it/public_html/\" --netrc | grep -E \"^DX\" | head -40)",
+      "Bash(curl -s --list-only \"ftp://ftp.bichialessandro.it/public_html/\" --netrc)",
+      "Bash(curl -s -T /c/Development/BichiAlessandro/index.html \"ftp://ftp.bichialessandro.it/public_html/index.html\" --netrc && echo \"Deployed\")"
     ]
   }
 }
